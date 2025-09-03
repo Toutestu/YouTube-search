@@ -5,7 +5,7 @@ from googleapiclient.discovery import build
 import pandas as pd
 
 # YouTube Data APIキーを設定
-api_key = 'AIzaSyAsT77Dn8rBK0ajPCvUD_zGLijN0IQcNaQ'  # 自分のAPIキーを設定
+api_key = '自分のAPIキーを設定'  # 自分のAPIキーを設定
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 # 特定のチャンネルIDを設定
@@ -74,3 +74,4 @@ csv_filename = f"{output_dir}/videos_{channel_id}.csv"  # CSVファイル名に�
 df.to_csv(csv_filename, index=False, encoding='utf-8-sig')  # 日本語対応のエンコーディングでCSVに書き出し
 
 print(f"Data extraction and CSV creation completed. CSV file saved as {csv_filename}")  # 処理完了メッセージを表示
+
